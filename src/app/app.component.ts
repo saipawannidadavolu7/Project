@@ -11,13 +11,21 @@ import { RetrieveDataService } from './retrieveData.service';
 export class AppComponent {
   title = 'myapp';
   
-   data$; 
-  constructor(private retrieveDataService: RetrieveDataService ){}
+     constructor(private retrieveDataService: RetrieveDataService ){}
  
  fetchData(){
 	  
-	 this.data$ = this.retrieveDataService.fetchData();
+	data = this.retrieveDataService.fetchData();
 	  
      }
+	  getname (obj : data.Structure)
+	  {
+		 return obj.name;
+	  }
+	  getID(o : data.Structure)
+	  {
+		  retuen o.id;
+	  }
+	  
 	  
 }
