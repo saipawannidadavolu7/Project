@@ -1,0 +1,5 @@
+Copy the package.json and src file to your angular application
+
+start the local server with ng serve -- open
+
+It redirects to app.component.html.
